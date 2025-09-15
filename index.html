@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Pages with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JavaScript Interactivity Assignment</h1>
+
+  <!--  Part 1: Event Handling -->
+  <section>
+    <h2>Event Handling</h2>
+    <button id="clickMeBtn">Click Me!</button>
+    <p id="clickMessage"></p>
+    
+    <input type="text" id="hoverInput" placeholder="Hover over me">
+    <p id="hoverMessage"></p>
+  </section>
+
+  <!--  Part 2: Interactive Features -->
+  <section>
+    <h2>Interactive Features</h2>
+
+    <!-- Dark/Light Mode Toggle -->
+    <button id="toggleModeBtn">Toggle Dark/Light Mode</button>
+
+    <!-- Counter Game -->
+    <div class="counter">
+      <button id="decreaseBtn">-</button>
+      <span id="counterValue">0</span>
+      <button id="increaseBtn">+</button>
+    </div>
+  </section>
+
+  <!-- Collapsible FAQ -->
+<div class="faq">
+  <h3 class="faq-question">What is JavaScript? <span>+</span></h3>
+  <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+</div>
+
+<div class="faq">
+  <h3 class="faq-question">Why learn JavaScript? <span>+</span></h3>
+  <p class="faq-answer">Because it’s one of the most popular languages and works on all browsers.</p>
+</div>
+
+<div class="faq">
+  <h3 class="faq-question">What can I build with JavaScript? <span>+</span></h3>
+  <p class="faq-answer">You can build dynamic websites, games, apps, and even server-side applications!</p>
+</div>
+
+
+  <!--  Part 3: Form Validation -->
+  <section>
+    <h2>📋 Form Validation</h2>
+    <form id="signupForm" novalidate>
+      <label>Name:</label>
+      <input type="text" id="name" required>
+      <small id="nameError" class="error"></small>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+      <small id="emailError" class="error"></small>
+
+      <label>Password:</label>
+      <input type="password" id="password" required>
+      <small id="passwordError" class="error"></small>
+
+      <button type="submit">Sign Up</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
